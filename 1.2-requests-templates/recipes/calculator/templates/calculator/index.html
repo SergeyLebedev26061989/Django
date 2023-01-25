@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+
+<body style="background-image: url(https://cdn.fishki.net/upload/post/201512/31/1797038/2_fun_pics_for_adults_53-1.gif); background-repeat: no-repeat; background-position: top center">
+
+</body>
+
+<ul style="color: blue; font-size: 50px">
+    {% for ingredient, amount in recipe.items %}
+    <li><i>{{ ingredient.upper }}:</i></li><span style="color: black"</span>
+    {% for food, quantity in amount.items %}
+        <ul>{{ food }}: {{quantity}}</ul>
+    {% endfor %}
+    {% endfor %}
+</body>
+</html>
